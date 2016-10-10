@@ -62,42 +62,57 @@
 							<div class="block-content ">
 								<div class="block-single clearfix">
 									<div class="clearfix">
-										<h1 class="large-title margBSSmall" style="font-size: 40px;letter-spacing: 5px;line-height: 50px;">Performance of Balanced Trees</h1> <p class="margBSSmall">While implementing redblack trees. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
+										<h1 class="large-title margBSSmall" style="font-size: 40px;letter-spacing: 5px;line-height: 50px;">Opening theory and survival</h1> 
+										<h1 class="large-title margBSSmall" style="font-size: 30px;letter-spacing: 3px;line-height: 40px;">Motivation</h1>
+										<p class="margBSSmall" style="text-align: justify;text-justify: inter-word;">There are only 32 possible ways a Chess game can begin. But the permutations explode after that and it becomes next to impossible to keep track of all the "lines" the game can take. To simplify this process, most players study what's called the Opening Theory of Chess.  After hundreds of years of experimentation, chess players have discovered that certain sequence of moves played in the beginning often lead to a strong position later on in the game. "Opening theory" commonly refers to this consensus, broadly represented by current literature on the openings.
+										</p>
+										<div class="clearfix margBSSmall">
+											<div class="col-md-4 col-md-offset-1">
+												<div class="clearfix">
+													<img src="img/portfolio/ruy_lopez.jpg" alt="">
+												</div>
+												<div class="clearfix" style="text-align:center">
+													<p>Ruy Lopez</p>
+												</div>
+											</div>
+											<div class="col-md-4 col-md-offset-2">
+												<div class="clearfix">
+													<img src="img/portfolio/sic.jpg" alt="">
+												</div>
+												<div class="clearfix" style="text-align:center">
+													<p>Sicilian Defence</p>
+												</div>
+											</div>
+										</div>
+										<p class="margBSSmall" style="text-align: justify;text-justify: inter-word;">Shown above are two of my favorite openings, the Ruy-Lopez and the Sicilian Defence. Like most openings, they share certain common ideas. Controlling the center of the board is a very good way of ensuring a strong position throughout the game. Similarly, developing the minor pieces, the knights and the bishops, as soon as possible helps dominate the center and makes way for the king to castle. Since most players play the game this way (the top rated ones hardly experiment), it stands to reason that the pieces that try to control the center are most likely to be taken. The king and queen pawns, followed by knights and bishops. Rooks and Queens generally develop around the middle game and thus are out of danger for the first 20 moves or so. This is an account of the analysis I did to understand how the subtleties of opening theory effect the average survival probabilities of certain pieces. 
+										</p>
 											<hr>
 											</div>
 										</div>
-										<div class="block-single margBottom clearfix">
+										<div class="block-single clearfix">
 											<div class="clearfix">
-													<p>Sed ut perspiciatis unde omnis iste natus error
-													 sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-													 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-													 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
-													</div>
-										</div>
-											<div class="block-single margBottom clearfix" style="text-align:center">
-													<div class="clearfix">
-														<img src="img/portfolio/tree_ordered.png" alt="">
-													</div>
-													<div class="clearfix">
-														<p>labelsdbsdsidgsiud</p>
-													</div>
+												<h1 class="large-title margBSSmall" style="font-size: 30px;letter-spacing: 3px;line-height: 40px;">Methodology</h1>
+												<p style="text-align: justify;text-justify: inter-word;">Chess is one of the most well documented games, with records going back to the 1500s. So it wasn't difficult at all to find a large dataset. All the games are stored in a PGN file taken from <a href="http://chess-db.com/public/downloads/download.jsp?c=1">here</a>. This dataset has over 275,000 chess games played between players who are GMs or Elo 2500+. We need to first convert the games from standard algebraic notation (eg Be5) to long algebraic notation (eg Bd4Be5) which is easier to work with. We also need to get rid of any extra annotations to make the parsing easier and more efficient. Thankfully,<a href="https://www.cs.kent.ac.uk/people/staff/djb/pgn-extract/">pgn-extract</a> is built for doing exactly that.<br/><br/>
+												Once we have the games in the desired format, simulating them and calculating average survival probabilities is straight forward. We keep a 64x64 character array to act as our chess board and a boolean array of 32 elements to keep track of which pieces are dead/alive. We then iterate through every move of a game and keep track of captures. Note that we need to handle some special moves like castling and en-passant capture. At the end of every game, we update the cumulative "score" of every piece. 
+												</p>
+											<hr>
 											</div>
-												<div class="clearfix">
-													<div class="col-md-6">
-														<div class="clearfix">
-															<img src="img/portfolio/tree_ordered.png" alt="">
-														</div>
-														<div class="clearfix">
-															<p>labelsdbsdsidgsiud</p>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<p>Sed ut perspiciatis unde omnis iste natus error
-													 sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-													 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-													 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
-													</div>
+										</div>
+										<div class="block-single clearfix">
+											<div class="clearfix">
+												<h1 class="large-title margBSSmall" style="font-size: 30px;letter-spacing: 3px;line-height: 40px;">Results</h1>
+												<div class="block-single clearfix margBSSmall">
+													<p style="text-align: justify;text-justify: inter-word;">The results can be found in csv format <a href="chess_survival.csv">here</a>. This is what the results look like when plotted on a chess board. The darker the starting square of the piece, the less likely it is to survive.</p>
 												</div>
+												<div class="block-single clearfix margBSSmall" style="text-align:center">
+													<img src="img/portfolio/chess_graph.jpg" alt="">
+												</div>
+												<div class="block-single clearfix">
+													<p style="text-align: justify;text-justify: inter-word;">The findings are largely consistent with the implications of opening theory. Note that both the kings survive 100% of the games since they can never be captured, only check mated. As expected, the D and E file pawns have a rather poor rate of survival. The knights and bishops follow a similar pattern. Queens and Rooks fare much better along with the A,G and H file pawns.</p>
+												</div>
+											</div>
+										</div>
+										
 													</div>
 													
 													
