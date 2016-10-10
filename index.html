@@ -63,7 +63,7 @@
 				<li ><a href="#about"><i class="icon-user"></i>About</a></li>
 				<li><a  href="#portfolio" onclick="showGallery()"><i class="icon-picture"></i>Art</a></li>
 				<li><a  href="#projects"><i class="icon-list"></i>Projects</a></li>
-				<li><a  href="#blog"><i class="icon-chat"></i>Blog</a></li>
+				
 			</ul>
 
 			</nav>
@@ -433,7 +433,7 @@ modal here
 
 											<!--Item-->	
 											<div class="item miscellaneous">
-											<a class="box" href="img/portfolio/dimdroid.jpg">
+											<a class="dimbox" href="img/portfolio/dimdroid.jpg">
 												<div class="desc">
 												<h3 class="proj-desc">Dim Droid
 												
@@ -568,96 +568,7 @@ modal here
 									</section>
 										<!--End projects tab-->
 						
-				<!--Blog Tab-->
-									<section id="blog" class="bgWhite ofsInBottom">
-
-										<!--Blog -->
-										<div class="blog">
-
-											<!--Main title-->
-
-												<div class="main-title">
-													<h1 style="text-transform:none">Blog</h1>
-														<div class="divider">
-																<div class="zigzag large clearfix "  data-svg-drawing="yes" >
-					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-					</svg>
-					</div>
-					</div>
-												</div>	
-
-											<!--End main title-->
-
-
-
-
-										<!--Content-->	
-										<div class="content">
-
-											<!--Block content-->	
-											<div class="block-content ">
-
-											<!--Works-->
-											<div class="blog">
-
-
-
-
-											<!--Row-->	
-											<div class="row">
-												
-												<!--Blog posts-->	
-												<div class="block-posts ">
-													
-													
-													<!--Block post-->
-													<div class="block-post ">
-														<div class="col-md-12">
-															
-															
-															<div class="post-title">
-																<a href="blog_single.html">
-																	<h1 style="text-transform:none">Under maintainence</h1>
-																</a>
-															</div>
-						
-														</div>
-														
-														
-														<div class="clearfix"></div>
-														
-													</div>
-													<!--End block post-->
-													
-
-												</div>
-												<!--End blog posts-->	
-												
-												
-												</div>
-												<!--End row-->
-												
-												
-
-				                            </div>
-											<!--End blog-->
-
-											</div>
-											<!--End block content-->
-
-
-
-											</div>
-											<!--End content-->
-
-
-												</div>
-												<!--End blog-->
-
-											</section>
-												<!--End blog tab-->
+				
 				
 								<!--Portfolio Tab-->
 							<section id="portfolio" class="bgWhite ofsInBottom">
@@ -869,6 +780,7 @@ modal here
 <script>
 function showGallery(){
 		$("#mygallery").unitegallery({
+		tile_enable_icons: false,			//enable icons in mouseover mode
 		tile_enable_textpanel: true,		 	//enable textpanel
 					tile_textpanel_source: "title",		 	//title,desc,desc_title. source of the textpanel. desc_title - if description empty, put title
 					tile_textpanel_always_on: true,	 	//textpanel always visible
