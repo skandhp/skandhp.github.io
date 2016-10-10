@@ -81,7 +81,19 @@ $('.box').magnificPopup({
 					}
 				});
 
+$('.pbox').magnificPopup({
+	items : [
+	{	src : '<!--Container--> <div class="container" style="margin-bottom: 80px !important;margin-top:80px !important"> <div class="row "> <div class="col-md-12"> <!--Portfolio single--> <section id="portfolio" class="bgWhite ofsInBottom "> <!--Portfolio --> <div class="portfolio"> <!--Content--> <div class="content"> <!--Block content--> <div class="block-content "> <div class="block-single margBottom clearfix"> <div class="col-md-10 col-md-offset-1"> <h1 class="large-title margBSSmall">Project <br>Case Study</h1> <p class="margBSSmall">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p> <hr> <ul> <li>Job : <strong>Branding &amp; Development</strong> </li> <li>Client : <strong>Carlose Smith</strong> </li> <li>Year : <strong>Mars , 2015</strong> </li> <li>Agency : <strong>Mutation Media</strong> </li> </ul> </div> </div> <div class="block-single margBottom clearfix"> <div class="col-md-10 col-md-offset-1"> <img src="img/portfolio/large-1.jpg" alt=""> </div> </div> <div class="block-single margBottom clearfix"> <div class="col-md-10 col-md-offset-1"> <img src="img/portfolio/large-2.jpg" alt=""> </div> </div> <div class="block-single margBottom clearfix"> <div class="col-md-10 col-md-offset-1"> <img src="img/portfolio/large-3.jpg" alt=""> </div> </div> <div class="block-single margBottom clearfix"> <div class="col-md-10 col-md-offset-1"> <img src="img/portfolio/large-4.jpg" alt=""> </div> </div> </div> <!--End block content--> </div> <!--End content--> </div> <!--End portfolio--> </section> <!--End portfolio single--> </div> </div> <!--End row--> </div> <!--End container-->',
+        type: 'inline',
+		closeOnBgClick:true
+	}
+	]
+		
+      
+				});
 
+
+				
 $('.popup-youtube, .popup-vimeo').magnificPopup({
 	disableOn: 700,
 	type: 'iframe',

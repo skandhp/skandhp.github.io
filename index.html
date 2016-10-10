@@ -19,6 +19,7 @@
 		<link href="css/fontello.css" rel="stylesheet" type="text/css"  media="all">
 		<link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
 		<link href="css/main.css"  rel="stylesheet" type="text/css" media="all"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery/5.10.3/css/nanogallery.min.css"  rel="stylesheet" type="text/css" media="all"/>
 		
     </head>
     <body>
@@ -60,9 +61,9 @@
 
 			<ul>
 				<li ><a href="#about"><i class="icon-user"></i>About</a></li>
-				<li><a  href="#portfolio"><i class="icon-picture"></i>Art</a></li>
-				<!--<li><a  href="#contact"><i class="icon-list"></i>Projects</a></li>
-				<li><a  href="#blog"><i class="icon-chat"></i>Blog</a></li>-->
+				<li><a  href="#portfolio" onclick="showGallery()"><i class="icon-picture"></i>Art</a></li>
+				<li><a  href="#projects"><i class="icon-list"></i>Projects</a></li>
+				<li><a  href="#blog"><i class="icon-chat"></i>Blog</a></li>
 			</ul>
 
 			</nav>
@@ -71,7 +72,7 @@
 			<!--End main header-->				
 			<div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
 				<ul class="social">
-					<li><a href="https://www.facebook.com/skandh.pathak"><i class="icon-facebook"></i></a></li>
+					<li><a href="http://www.facebook.com/skandh.pathak"><i class="icon-facebook"></i></a></li>
 					<li><a href="https://in.linkedin.com/in/skandh-pathak-b46b0378"><i class="icon-linkedin"></i></a></li>
 				</ul>
 			</div>
@@ -94,7 +95,7 @@
 							<!--Main title-->
 							
 								<div class="main-title">
-									<h1>who am i</h1>
+									<h1 style="text-transform:none">About Me</h1>
 									<div class="divider">
 											<div class="zigzag large clearfix "  data-svg-drawing="yes" >
 <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -111,7 +112,7 @@
 							
 						
 						<!--Content-->	
-						<div class="content">
+						<div class="content"  style="padding-bottom:10px">
 							
 							<!--Block content-->	
 							<div class="block-content margBSmall">
@@ -124,18 +125,12 @@
 							<!--Row-->	
 							<div class="row">
 								<div class="col-md-6">
-									<p>Sed ut perspiciatis unde omnis iste natus error
-									 sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-									 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-									 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
+									<p style="text-align:justify">Hello! I am a full stack developer based out of Pune,India. Currently working for a leading Video On Demand(VOD) provider in emerging markets. I love coding up small projects over weekends; most of them revolve around using advanced data structures and algorithms to solve real life problems.</p>
 								</div>
 								
 								
 								<div class="col-md-6">
-									<p>Sed ut perspiciatis unde omnis iste natus error
-									 sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-									 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-									 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
+									<p style="text-align:justify">I have an eye for aesthetics and when I'm not coding, I like to draw. I normally use pencils and charcol, though I have dabbled with watercolors too. Each one normally takes around 8-10 hours to make. Love listening to Queen and Led Zeppelin while drawing.</p>
 								</div>
 							
 
@@ -157,7 +152,7 @@
 						<!--Button-->
 						<!--Content-->	
 							
-									<div class="button margTop ofsInTop tCenter">
+									<div class="button margTop ofsInTop tCenter" style="padding-top: 80px !important;">
 											
 											<div class="divider">
 													<div class="zigzag large clearfix "  data-svg-drawing="yes" >
@@ -201,9 +196,468 @@
 						<!--End about tab-->
 						
 						
+						<!--Projects Tab-->
+							<section id="projects" class="bgWhite ofsInBottom">
+
+								<!--Portfolio -->
+								<div class="contact">
+
+									<!--Main title-->
+
+										<div class="main-title">
+											<h1 style="text-transform:none">Projects</h1>
+												<div class="divider">
+														<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+			<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+				29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+			</svg>
+			</div>
+			</div>
+										</div>	
+
+									<!--End main title-->
+
+
+
+
+								<!--Content-->	
+								<div class="content">
+
+									<!--Block content-->	
+									<div class="block-content ">
+
+									<!--Works-->
+									<div class="works">
+										
+										
+										
+										
+									<!--Row-->	
+									<div class="row">
+										
+										<div class="block-filter tCenter">
+											<ul id="category" class="filter">
+												<li><a data-filter="all" href="#" class="active">all</a></li>
+												<li><a data-filter="miscellaneous" href="#">Miscellaneous</a></li>
+												<li><a data-filter="algorithms" href="#">Algorithms</a></li>
+												<li><a data-filter="chess" href="#">Chess</a></li>
+										</ul>
+
+										</div>
+										
+										
+									</div>
+									<!--End row-->
+									
+									
+									
+									
+									
+									<!--Row-->
+									<div class="row">
+										
+										<div class="divider-m tCenter margTSSmall margBSmall clearfix">
+											<div class="col-md-12">
+												<div class="zigzag medium clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</div>
+											</div>
+										</div>
+									</div>
+									<!--End row-->
+									
+									
+									
+									
+									<!--Row-->	
+									<div class="row">
+										
+										<ul class="work">
+										
+										<li class="col-md-4 ">
+											
+											<!--Item-->	
+											<div class="item algorithms">
+											<!--<a  href="project_single.html">-->	
+											<a  href="javascript:void(0);"  data-toggle="modal" data-target=".bs-example-modal-lg">
+												<div class="desc">
+												<h3 class="proj-desc">Beating Boggle
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>Uses tries and dynamic programming</span></h3>
+												 
+												</div>
+												
+												<img alt="" src="img/portfolio/boggle.jpg">
+											</a>
+											
+											
+											<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+modal here
+    </div>
+  </div>
+</div>
+											
+											
+											
+											
+											
+
+										</div>
+										<!--End item-->	
+										
+										</li>
+										
+									
+										<li class="col-md-4" >
+
+											<!--Item-->	
+											<div class="item algorithms">
+											<a class="box" href="img/portfolio/tree_cover.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">Performance of Balanced Trees
+	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+												<span>How data-sets affect performance of balanced trees</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/tree_cover.jpg">
+												
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+										
+										
+										<li class="col-md-4" >
+
+											<!--Item-->	
+											<div class="item chess">
+											<a class="box" href="img/portfolio/survival.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">Opening theory and survival
+	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+												<span>Calculating trends by analysing 275,000+ games</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/survival.jpg">
+												
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+										
+
+
+										
+										
+										<li class="col-md-4">
+
+											<!--Item-->	
+											<div class="item chess">
+											<a class="box" href="img/portfolio/knight.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">Recursion in chess
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>N Queens and Knights tour</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/knight.jpg">
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+
+										<li class="col-md-4" >
+
+											<!--Item-->	
+											<div class="item miscellaneous">
+											<a class="box" href="img/portfolio/factoradic.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">Application of Factoradics
+	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+												<span>Using factoradic number system to generate n-th permutation of a given set</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/factoradic.jpg">
+												
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+
+
+										<li class="col-md-4">
+
+											<!--Item-->	
+											<div class="item miscellaneous">
+											<a class="box" href="img/portfolio/dimdroid.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">Dim Droid
+												
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>Android based 3D dimensioning system</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/dimdroid.jpg">
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+										
+										<li class="col-md-4" >
+
+											<!--Item-->	
+											<div class="item algorithms">
+											<a class="box" href="img/portfolio/stringSearch.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">String Matching
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>Comparison of KMP, Boyer-Moore, Rabin-Karp and others</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/stringSearch.jpg">
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+										
+										<li class="col-md-4">
+
+											<!--Item-->	
+											<div class="item miscellaneous">
+											<a class="box" href="img/portfolio/crawler.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">Recursive web crawler
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>Uses JSoup</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/crawler.jpg">
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+										
+										
+
+										<li class="col-md-4" >
+
+											<!--Item-->	
+											<div class="item algorithms">
+											<a class="box" href="img/portfolio/sudoku.jpg">
+												<div class="desc">
+												<h3 class="proj-desc">Sudoku solver
+												<span class="zigzag work clearfix "  data-svg-drawing="yes" >
+	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+</span>
+
+												
+												 <span>Using backtracking</span></h3>
+												</div>
+
+												<img alt="" src="img/portfolio/sudoku.jpg">
+											</a>
+
+										</div>
+										<!--End item-->	
+
+										</li>
+										
+										
+										
+
+										</ul>
+										
+										</div>
+										<!--End row-->
+
+										
+										
+										
+
+
+		                            </div>
+									<!--End works-->
+									
+									<div class="clearfix"></div>
+
+									</div>
+									<!--End block content-->
+									
+									
+									
+									</div>
+									<!--End content-->
+									
+										</div>
+										<!--End portfolio-->
+
+									</section>
+										<!--End projects tab-->
 						
+				<!--Blog Tab-->
+									<section id="blog" class="bgWhite ofsInBottom">
+
+										<!--Blog -->
+										<div class="blog">
+
+											<!--Main title-->
+
+												<div class="main-title">
+													<h1 style="text-transform:none">Blog</h1>
+														<div class="divider">
+																<div class="zigzag large clearfix "  data-svg-drawing="yes" >
+					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+					</svg>
+					</div>
+					</div>
+												</div>	
+
+											<!--End main title-->
+
+
+
+
+										<!--Content-->	
+										<div class="content">
+
+											<!--Block content-->	
+											<div class="block-content ">
+
+											<!--Works-->
+											<div class="blog">
+
+
+
+
+											<!--Row-->	
+											<div class="row">
+												
+												<!--Blog posts-->	
+												<div class="block-posts ">
+													
+													
+													<!--Block post-->
+													<div class="block-post ">
+														<div class="col-md-12">
+															
+															
+															<div class="post-title">
+																<a href="blog_single.html">
+																	<h1 style="text-transform:none">Under maintainence</h1>
+																</a>
+															</div>
 						
-				
+														</div>
+														
+														
+														<div class="clearfix"></div>
+														
+													</div>
+													<!--End block post-->
+													
+
+												</div>
+												<!--End blog posts-->	
+												
+												
+												</div>
+												<!--End row-->
+												
+												
+
+				                            </div>
+											<!--End blog-->
+
+											</div>
+											<!--End block content-->
+
+
+
+											</div>
+											<!--End content-->
+
+
+												</div>
+												<!--End blog-->
+
+											</section>
+												<!--End blog tab-->
 				
 								<!--Portfolio Tab-->
 							<section id="portfolio" class="bgWhite ofsInBottom">
@@ -214,7 +668,7 @@
 									<!--Main title-->
 
 										<div class="main-title">
-											<h1>Of Charcol And Pencils</h1>
+											<h1 style="text-transform:none">Of Charcol,Pencils And Watercolors</h1>
 												<div class="divider">
 														<div class="zigzag large clearfix "  data-svg-drawing="yes" >
 			<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -243,329 +697,96 @@
 									
 									<!--Row-->	
 									<div class="row">
-										
-										<ul class="work">
-										
-										<li class="col-md-4 ">
 											
-											<!--Item-->	
-											<div class="item graphic">
-											<a class="box" href="img/art/chester.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Chester Bennington
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>Linkin Park</span></h3>
-												</div>
-
-												<img alt="" src="img/art/chester.jpg">
-												
+											<div id="mygallery">
+											<a href="img/art/chester.jpg">
+												<img alt="Chester Bennington"
+													 src="img/art/chester.jpg"
+													 data-image="img/art/chester.jpg"
+													 data-description="Linkin Park"
+													 style="display:none">
+												</a>
+											<a href="img/art/bb.jpg">
+											<img alt="Bryan Cranston"
+												 src="img/art/bb.jpg"
+												 data-image="img/art/bb.jpg"
+												 data-description="Breaking Bad"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-										
-										</li>
-										
-									
-										<li class="col-md-4" >
-
-											<!--Item-->	
-											<div class="item graphic">
-											<a class="box" href="img/art/bb.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Bryan Cranston
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>Breaking Bad</span></h3>
-												</div>
-
-												<img alt="" src="img/art/bb.jpg">
-												
+											<a href="img/art/damon.jpg">
+											<img alt="Ian Somerhalder"
+												 src="img/art/damon.jpg"
+												 data-image="img/art/damon.jpg"
+												 data-description="Vampire Diaries"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-
-										</li>
-										
-										
-										<li class="col-md-4" >
-
-											<!--Item-->	
-											<div class="item graphic">
-											<a class="box" href="img/art/damon.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Ian Somerhalder 
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>Vampire Diaries</span></h3>
-												</div>
-
-												<img alt="" src="img/art/damon.jpg">
-												
+											<a href="img/art/hank.jpg">
+											<img alt="David Duchovny"
+												 src="img/art/hank.jpg"
+												 data-image="img/art/hank.jpg"
+												 data-description="Californication"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-
-										</li>
-										
-
-
-										
-										
-										<li class="col-md-4">
-
-											<!--Item-->	
-											<div class="item graphic">
-											<a class="box" href="img/art/joker.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Joker
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>Pencils and watercolors</span></h3>
-												</div>
-
-												<img alt="" src="img/art/joker.jpg">
-												
+											<a href="img/art/joker.jpg">
+												<img alt="Joker"
+													 src="img/art/joker.jpg"
+													 data-image="img/art/joker.jpg"
+													 data-description="joker"
+													 style="display:none">
+												</a>
+											<a href="img/art/watson.jpg">
+											<img alt="Martin Freeman"
+												 src="img/art/watson.jpg"
+												 data-image="img/art/watson.jpg"
+												 data-description="watson"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-
-										</li>
-
-
-										<li class="col-md-4">
-
-											
-											<!--Item-->	
-											<div class="item graphic">
-											<a class="box" href="img/art/bruce.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Bruce Willis
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>A study in shadows and watercolors</span></h3>
-												</div>
-
-												<img alt="" src="img/art/bruce.jpg">
-												
+											<a href="img/art/house.jpg">
+											<img alt="Hugh Laurie"
+												 src="img/art/house.jpg"
+												 data-image="img/art/house.jpg"
+												 data-description="House MD"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-
-										</li>
-
-
-										<li class="col-md-4">
-
-											<!--Item-->	
-											<div class="item graphic">
-											<a class="box" href="img/art/watson.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Martin Freeman
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>Sherlock</span></h3>
-												</div>
-
-												<img alt="" src="img/art/watson.jpg">
-												
+											<a href="img/art/che.jpg">
+											<img alt="Che Guevara"
+												 src="img/art/che.jpg"
+												 data-image="img/art/che.jpg"
+												 data-description="Che Guevara"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-
-										</li>
-										
-
-										
-										<li class="col-md-4">
-
-											<!--Item-->	
-											<div class="item graphic" style="min-height: 290px">
-											<a class="box" href="img/art/batman.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Batman
-	
-												</div>
-
-												<img alt="" src="img/art/batman.jpg">
-												
+											<a href="img/art/batman.jpg">
+											<img alt="Batman"
+												 src="img/art/batman.jpg"
+												 data-image="img/art/batman.jpg"
+												 data-description="batman"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-
-										</li>
-
-
-										<li class="col-md-4">
-
-											<!--Item-->	
-											<div class="item graphic" style="min-height: 290px">
-											<a class="box" href="img/art/che.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Che Guevara
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>Color pencils</span></h3>
-												</div>
-
-												<img alt="" src="img/art/che.jpg">
-												
+											<a href="img/art/rockon.jpg">
+											<img alt="Rock On(2008)"
+												 src="img/art/rockon.jpg"
+												 data-image="img/art/rockon.jpg"
+												 data-description="rockon"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->
-
-										</li>
-
-
-										<li class="col-md-4">
-
-											<!--Item-->	
-											<div class="item graphic" style="min-height: 290px">
-											<a class="box" href="img/art/hank.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">David Duchovny
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>Californication</span></h3>
-												</div>
-
-												<img alt="" src="img/art/hank.jpg">
-												
+											<a href="img/art/bruce.jpg">
+											<img alt="Bruce Willis"
+												 src="img/art/bruce.jpg"
+												 data-image="img/art/bruce.jpg"
+												 data-description="bruce"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->	
-										
-
-										</li>
-
-										
-										
-										
-										<li class="col-md-4 ">
-
-											<!--Item-->	
-											<div class="item graphic" style="min-height: 290px">
-											<a class="box" href="img/art/supernatural.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Supernatural
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>More watercolors</span></h3>
-												</div>
-
-												<img alt="" src="img/art/supernatural.jpg">
-												
+											<a href="img/art/supernatural.jpg">
+											<img alt="Supernatural"
+												 src="img/art/supernatural.jpg"
+												 data-image="img/art/supernatural.jpg"
+												 data-description="Supernatural"
+												 style="display:none">
 											</a>
-
-										</div>
-										<!--End item-->		
-
-										</li>
-
-
-										<li class="col-md-4">
-
-											<!--Item-->	
-											<div class="item graphic" style="min-height: 290px">
-											<a class="box" href="img/art/rockon.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Rock On!
-	
-												</div>
-
-												<img alt="" src="img/art/rockon.jpg">
 												
-											</a>
-
-										</div>
-										<!--End item-->	
-
-
-										</li>
-
-
-										<li class="col-md-4">
-
-											<!--Item-->	
-											<div class="item graphic" style="min-height: 290px">
-											<a class="box" href="img/art/house.jpg">
-												<div class="desc">
-												<h3 class="proj-desc">Hugh Laurie
-	<span class="zigzag work clearfix "  data-svg-drawing="yes" >
-	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-</span>
-												<span>House MD</span></h3>
-												</div>
-
-												<img alt="" src="img/art/house.jpg">
-												
-											</a>
-
-										</div>
-										<!--End item-->	
-										</li>
+											</div>
 										
 										
-										</ul>
-										
-										</div>
-										<!--End row-->
-
-										
-										
-										
-
-
-		                            </div>
-									<!--End works-->
 									
 									<div class="clearfix"></div>
 
@@ -607,7 +828,9 @@
 				
 	
 <!--Javascript-->	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>			
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js"></script>			
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
@@ -615,19 +838,50 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.jquery.js"></script>
-<script src="js/script.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/freewall/1.0.5/freewall.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>	
+	<script type='text/javascript' src='js/unitegallery.min.js'></script>	
+
+	<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
+	
+	<script type='text/javascript' src='js/ug-theme-tiles.js'></script>
+
 
 <script>
-
+function showGallery(){
+		$("#mygallery").unitegallery({
+		tile_enable_textpanel: true,		 	//enable textpanel
+					tile_textpanel_source: "title",		 	//title,desc,desc_title. source of the textpanel. desc_title - if description empty, put title
+					tile_textpanel_always_on: true,	 	//textpanel always visible
+					tile_textpanel_appear_type: "slide", 	//slide, fade - appear type of the textpanel on mouseover
+					tile_textpanel_position:"inside_bottom", //inside_bottom, inside_top, inside_center, top, bottom the position of the textpanel
+					tile_textpanel_offset:0,			    //vertical offset of the textpanel
+					
+					tile_textpanel_padding_top:8,		 	//textpanel padding top 
+					tile_textpanel_padding_bottom:8,	 	//textpanel padding bottom
+					tile_textpanel_padding_right: 11,	 	//cut some space for text from right
+					tile_textpanel_padding_left: 11,	 	//cut some space for text from left
+					tile_textpanel_bg_opacity: 0.4,		 	//textpanel background opacity
+					tile_textpanel_bg_color:"#000000",	 	//textpanel background color
+					tile_textpanel_bg_css:{},			 	//textpanel background css
+					
+					tile_textpanel_title_color:null,		 //textpanel title color. if null - take from css
+					tile_textpanel_title_font_family:null,	 //textpanel title font family. if null - take from css
+					tile_textpanel_title_text_align:"left",	 //textpanel title text align. if null - take from css
+					tile_textpanel_title_font_size:null,	 //textpanel title font size. if null - take from css
+					tile_textpanel_title_bold:null,			 //textpanel title bold. if null - take from css
+					tile_textpanel_css_title:{},			 //textpanel additional css of the title
+					
+					tile_textpanel_desc_color:null,			 //textpanel description font family. if null - take from css
+					tile_textpanel_desc_font_family:null,	 //textpanel description font family. if null - take from css
+					tile_textpanel_desc_text_align:null,	 //textpanel description text align. if null - take from css
+					tile_textpanel_desc_font_size:null,		 //textpanel description font size. if null - take from css
+					tile_textpanel_desc_bold:null,			 //textpanel description bold. if null - take from css
+					tile_textpanel_css_description:{},		 //textpanel additional css of the description
+	});}
 (function($) {
   "use strict";
 
-$(document).ready(function(){
-
-	var wall = new Freewall("#gallery");
-	wall.fitWidth();
-
+  
 	$('#wrapper').easytabs({
 	animate			: true,
 	updateHash		: false,
@@ -640,8 +894,7 @@ $(document).ready(function(){
   	transitionOutEasing: 'linear'	
 
 });
-
-});
+  
 
 })(jQuery);
 
