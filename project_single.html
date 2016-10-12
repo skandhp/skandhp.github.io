@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    
+<!-- Mirrored from demo.mutationmedia.net/SPLIT/project_single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Sep 2016 11:26:32 GMT -->
+<head>
+       <!-- Metas -->
+        <meta charset="utf-8">
+        <title>Welcome</title>
+        <meta name="description" content="">
+      	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+			<!-- Css -->
+	        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+	        <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet"  media="all">
+			<link href="css/owl-carousel/owl.theme.css" rel="stylesheet"  media="all">
+			<link href="css/magnific-popup.css" type="text/css" rel="stylesheet" media="all" />
+			<link href="css/font.css" rel="stylesheet" type="text/css"  media="all">
+			<link href="css/fontello.css" rel="stylesheet" type="text/css"  media="all">
+			<link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+			<link href="css/main.css"  rel="stylesheet" type="text/css" media="all"/>
+
+
+	
+        <!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
+    </head>
+    <body>
+	
+	
+	
+	
+<!-- Preloader -->
+<div id="loader">
+		<!-- Preloader inner -->
+  <div id="loaderInner">
+	<div class="spinner"></div>
+  </div>
+<!-- End preloader inner -->
+</div>
+<!-- End preloader-->
+
+
+<div id="wrapper" class="margLTop  margLBottom">
+	<!--Container-->
+	<div class="container" style="margin-bottom: 80px !important;margin-top:80px !important">
+		<div class="row ">
+			<div class="col-md-12">
+				<!--Portfolio single-->
+				<section id="portfolio" class="bgWhite ofsInBottom ">
+					<!--Portfolio -->
+					<div class="portfolio">
+						<!--Content-->
+						<div class="content">
+							<!--Block content-->
+							<div class="block-content ">
+								<div class="block-single clearfix">
+									<div class="clearfix">
+										<h1 class="large-title margBSSmall" style="font-size: 40px;letter-spacing: 5px;line-height: 50px;">Recursive Web crawler</h1> 
+										<h1 class="large-title margBSSmall" style="font-size: 30px;letter-spacing: 3px;line-height: 40px;">Motivation</h1>
+										<p class="margBSSmall" style="text-align: justify;text-justify: inter-word;">I won't go into the details, but had always wanted to I was reading  3D dimensioning systems find many applications in the freight industry by companies like FedEx who use them to quickly measure and sort their shipments by size. But the level of complexity involved in such cameras coupled with the overall cost puts them out of reach of smaller companies. Solving this problem was the premise for my final year thesis at College of Engineering Pune. Along with two classmates, I developed an android based dimensioning system that worked using <a href="http://www.cns.nyu.edu/~david/courses/perception/lecturenotes/depth/depth-size.html">Depth by disparity</a> and <a href="http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html">3D reprojection</a>. 
+										</p>
+										<div class="clearfix margBSSmall">
+											<div class="col-md-4 col-md-offset-1">
+												<div class="clearfix">
+													<img src="img/portfolio/dim_droid.jpg" alt="">
+												</div>
+												<div class="clearfix" style="text-align:center">
+													<p>Hardware Setup</p>
+												</div>
+											</div>
+											<div class="col-md-4 col-md-offset-2">
+												<div class="clearfix">
+													<img src="img/portfolio/dim_working.jpg" alt="">
+												</div>
+												<div class="clearfix" style="text-align:center">
+													<p>Our system at work</p>
+												</div>
+											</div>
+										</div>
+										<p class="margBSSmall" style="text-align: justify;text-justify: inter-word;">Our system used an average android smart phone mounted on a slider to take stereo images of an object. Our android app then analyzed these images and calculated the dimensions of the object. After over a year of refining both the hardware setup and the image processing algorithms, we were able to achieve an average error of &lt; 2%. Our work was well recieved and we won the S.V.C.Aiya Memorial Award for it.
+										</p>
+											<hr>
+											</div>
+										</div>
+										<div class="block-single clearfix">
+											<div class="clearfix margBSSmall">
+												<h1 class="large-title margBSSmall" style="font-size: 30px;letter-spacing: 3px;line-height: 40px;">Methodology</h1>
+												<p style="text-align: justify;text-justify: inter-word;">Our system made extensive use of depth maps such as the one shown below. The lighter the object, the closer it is to the camera. We tried many algorithms to generate this map, from simple ones like Sum of Absolute Differences to advanced ones like graph cut. We finally settled on Semi Global Block Matching as it provided the best combination of speed and accuracy.
+												</p>
+											</div>
+											<div class="clearfix margBSSmall">
+												<div class="col-md-8 col-md-offset-2">
+													<div class="clearfix" style="text-align:center">
+														<img src="img/portfolio/depth_map.jpg" alt="">
+													</div>
+													<div class="clearfix" style="text-align:center">
+														<p>Depth Map</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="block-single clearfix">
+											<div class="clearfix margBSSmall">
+												<p style="text-align: justify;text-justify: inter-word;">We extracted the object of interest from this depth map using object detection and segmentation algorithms. To get a more accurate measurement, we combined this result with the output of a edge detection filter to get a better outline of the object.
+												</p>
+											</div>
+											<div class="clearfix margBSSmall">
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/dm1.jpg" alt="">
+													</div>
+													<div class="clearfix" style="text-align:center">
+														<p>Depth Map</p>
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/dm2.jpg" alt="">
+													</div>
+													<div class="clearfix" style="text-align:center">
+														<p>After Segmentation</p>
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/dm3.jpg" alt="">
+													</div>
+													<div class="clearfix" style="text-align:center">
+														<p>Edge Detection</p>
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/dm4.jpg" alt="">
+													</div>
+													<div class="clearfix" style="text-align:center">
+														<p>Final Result</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="block-single clearfix">
+											<div class="clearfix margBSSmall">
+												<p style="text-align: justify;text-justify: inter-word;">After we had the relative distances, the next step was to use stereo calibration to compute the intrinsic rotation, translation and disparity to depth mapping matrices of the camera. Note that this value is different for every camera. These matrices allowed us to map the relative distances from the depth map into real world measurements in meters. For stereo calibration, we clicked 16 stereo pairs of a chessboard pattern and processed them using OpenCV (skipping a ton of math that can be found <a href="http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html">here</a>).
+												</p>
+											</div>	
+											<div class="clearfix margBSSmall">
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/cb1.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/cb2.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/cb3.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="clearfix">
+														<img src="img/portfolio/cb4.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+												
+												
+										<div class="block-single clearfix">
+											<div class="clearfix">
+												<h1 class="large-title margBSSmall" style="font-size: 30px;letter-spacing: 3px;line-height: 40px;">Results</h1>
+												<div class="block-single clearfix margBSSmall">
+													<ol>
+														<li style="list-style:upper-roman">
+															The average errors observed were as follows
+																<ul style="padding-left:20px">
+																	<li style="list-style:disc">E<sub>D</sub> (Error in distance) = 0.8213 %</li>
+																	<li style="list-style:disc">E<sub>W</sub> (Error in width)= 1.5461 %</li>
+																	<li style="list-style:disc">E<sub>H</sub> (Error in height)= 1.6931 %</li>
+																</ul>
+														</li>
+														<li style="list-style:upper-roman">
+															The minimum distance at which the object can be accurately measured was found to be 44 cm from the camera. This is because the object does not fit the camera frame entirely if brought any closer. 
+														</li>
+														<li style="list-style:upper-roman">
+															The maximum distance was found to be 250cm from the camera. This is due to the fact that if the object is placed any further, it is not segmented properly due to its low disparity value and lack of prominent edge detection.
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+										
+													</div>
+													
+													
+													</div>
+													<!--End block content-->
+												</div>
+												<!--End content-->
+											</div>
+											<!--End portfolio-->
+										</section>
+										<!--End portfolio single-->
+									</div>
+								</div>
+								<!--End row-->
+							</div>
+							<!--End container-->
+						</div>
+						<!--End wrapper-->
+				
+	
+<!--Javascript-->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js"></script>			
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.jquery.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+
+
+
+
+
+<script>
+
+</script>
+
+
+<!-- Google analytics -->
+
+
+<!-- End google analytics -->
+
+
+    </body>
+
+<!-- Mirrored from demo.mutationmedia.net/SPLIT/project_single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Sep 2016 11:26:49 GMT -->
+</html>
