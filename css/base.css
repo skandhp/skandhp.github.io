@@ -73,7 +73,7 @@ iframe{width:100%;frameborder:0;display:inline-block;}
 	body {
 		background: #efefef;
 		font: 14px/22px "open_sans",Arial,sans-serif;
-		color: #999999;
+		color: #666666;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
 		margin:0;
@@ -99,7 +99,7 @@ iframe{width:100%;frameborder:0;display:inline-block;}
 	
 	
 	.main-title{
-		border-bottom:1px solid #efefef;
+		border-bottom:2px solid #efefef;
 		padding:30px 10px 2px 40px;
 		position:relative;
 	}
@@ -201,12 +201,24 @@ iframe{width:100%;frameborder:0;display:inline-block;}
 	.button{
 		position:relative;
 	}
+	.button1{
+		position:relative;
+	}
+	.button1:before{
+		background: #efefef;
+    content: "";
+    height: 0px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+	}
 	
 	
 	.button:before{
 	background: #efefef;
     content: "";
-    height: 1px;
+    height: 3px;
     left: 0;
     position: absolute;
     top: 0;
